@@ -1,0 +1,8 @@
+CREATE DATABASE patolandia;
+
+CREATE TABLE pato(
+id INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(30),
+raca VARCHAR(30),
+altura VARCHAR(20)
+);

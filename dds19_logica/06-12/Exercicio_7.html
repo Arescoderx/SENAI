@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        //Escreva um algoritmo que leia 10 números e conte quantos são positivos e quantos são negativos.
+        let numeros = []
+        let positivos = 0
+        let negativos = 0
+
+        for (let i = 1; i <= 3; i++) {
+            let num = parseInt(window.prompt('Informe um número:'))
+            numeros.push(num)
+        }
+
+        for (let i = 0; i < numeros.length; i++) {
+            if (numeros[i] > 0) {
+                positivos = positivos + 1
+
+            }else if (numeros[i] < 0){
+                negativos = negativos + 1
+            }
+        }
+
+        window.alert('São ' + positivos + ' positivos e ' + negativos + ' negativos')
+
+    </script>
+</body>
+</html>

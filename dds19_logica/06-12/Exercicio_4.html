@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        //Escreva um programa que receba um ano e determine se ele é bissexto.
+        let ano
+        
+        window.alert('Verificador de Ano Bissexto')
+
+        ano = parseInt(window.prompt('Informe o ano'));
+        if ((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0)) {
+            window.alert('O Ano é Bissexto');
+        } else {
+            window.alert('O Ano não é Bissexto');
+        }
+    </script>
+</body>
+</html>

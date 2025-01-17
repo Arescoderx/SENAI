@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>CALCULADORA DE IMC</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script>
+        alert("Bem vindo a calculadora de IMC");
+        
+        let peso;
+        peso = Number(peso);
+        peso = window.prompt("Digite seu peso:(Quilos)");
+        console.log(peso)
+
+        let altura;
+        altura = Number(altura);
+        altura = window.prompt("Digite sua altura:(Metros)");
+        console.log(altura);
+
+        let imc;
+        imc = peso / altura**2;
+        imc = imc * 100;
+        imc = Math.round(imc); // A função roud do Objeto Math arredonda para numeros inteiros
+        imc = imc/100;
+        /*
+        É necessário aumentar o numero como exem 4,778952 para 477,8952 com o Math.roud fica 478 arredondando
+        dividindo por 100 fica 4,78
+        */
+        console.log(imc);
+        alert("Seu imc é: "+imc);
+
+        if(imc < 18.49){
+            console.log("Abaico do Normal");
+        }else if(imc <= 24.99){
+            console.log("Faixa saudável");
+        }else if(imc <= 30){
+            console.log("Acima do peso");
+        }else if(imc <= 35){
+            console.log("Faixa de obesidade grau 1");
+        }else if(imc <= 40){
+            console.log("Faixa de obesidade grau 2");
+        }else{
+            console.log("Faixa de obesidade grau 3");
+        }
+
+        
+    </script>
+</head>
+
+</html>

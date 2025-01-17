@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRAMA DE MEDIA DE NOTAS</title>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        //Escreva um algoritmo que calcule a média de quatro notas e determine se o aluno foi
+        //aprovado (média >= 7), em recuperação (média >= 5 e < 7) ou reprovado (média < 5).
+
+        let media = 0
+        let total = 0
+        let nota = 0
+
+        window.alert('PROGRAMA DE MEDIA DE NOTAS')
+        for (let i = 1; i < 5; i++) {
+            nota = parseFloat(window.prompt("O valor da nota"+i+":"))
+            total = nota + total
+        }
+        media = total / 4
+
+        let mediaFormatada = media.toFixed(2)
+        let mediaNumero = parseFloat(mediaFormatada)
+
+        if(mediaFormatada >= 7){
+            window.alert('Você foi Aprovado, Sua media é: '+mediaNumero)
+        }else if(media >= 5){
+            window.alert('Você ficou de Recuperação, Sua media é: '+mediaNumero)
+        }else{
+            window.alert('Você está Reprovado, Sua media é: '+mediaNumero)
+        }
+    </script>
+</body>
+</html>

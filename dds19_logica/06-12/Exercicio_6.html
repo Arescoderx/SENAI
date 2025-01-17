@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        //Crie um programa que calcule o fatorial de um número informado pelo usuário.
+        
+        let n = parseInt(window.prompt('Informe um numero para descobrir seu fatorial: '))
+        let resultado = 1
+        for (let i = n; i > 1; i--) {
+          resultado *= i
+        }
+
+        window.alert('O fatorial do seu numero é: '+resultado)
+    </script>
+</body>
+</html>

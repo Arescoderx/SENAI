@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        //Escreva um programa que leia 10 números e armazene em um array. Em seguida, encontre e exiba o maior e o menor número armazenado.
+        let numeros = [];
+        let maior;
+        let menor;
+
+        for (let i = 1; i <= 10; i++) {
+            let num = parseInt(window.prompt(`Informe o ${i}º número:`));
+            numeros.push(num);
+        }
+
+        maior = numeros[0]
+        menor = numeros[0]
+
+        for (let i = 1; i < numeros.length; i++) {
+            if (numeros[i] > maior) {
+                maior = numeros[i]
+            }
+            if (numeros[i] < menor) {
+                menor = numeros[i]
+            }
+        }
+
+        window.alert('O maior número é: '+maior)
+        window.alert('O menor número é: '+menor)
+
+    </script>
+</body>
+</html>
